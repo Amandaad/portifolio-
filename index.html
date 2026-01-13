@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amanda Simplicio da Silva - Portfólio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    .font-cormorant {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+    
+    .gold-gradient {
+      background: linear-gradient(135deg, #c9a961 0%, #f4e4ba 50%, #c9a961 100%);
+    }
+    
+    .gold-text {
+      background: linear-gradient(135deg, #c9a961 0%, #f4e4ba 50%, #c9a961 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .section-card {
+      background: rgba(20, 20, 20, 0.8);
+      border: 1px solid rgba(201, 169, 97, 0.2);
+      backdrop-filter: blur(10px);
+      transition: all 0.4s ease;
+    }
+    
+    .section-card:hover {
+      border-color: rgba(201, 169, 97, 0.5);
+      box-shadow: 0 10px 40px rgba(201, 169, 97, 0.15);
+      transform: translateY(-5px);
+    }
+    
+    .skill-badge {
+      background: linear-gradient(135deg, rgba(201, 169, 97, 0.2) 0%, rgba(244, 228, 186, 0.1) 100%);
+      border: 1px solid rgba(201, 169, 97, 0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .skill-badge:hover {
+      background: linear-gradient(135deg, rgba(201, 169, 97, 0.3) 0%, rgba(244, 228, 186, 0.2) 100%);
+      border-color: rgba(201, 169, 97, 0.6);
+      transform: scale(1.05);
+    }
+    
+    .btn-gold {
+      background: linear-gradient(135deg, #c9a961 0%, #f4e4ba 50%, #c9a961 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(201, 169, 97, 0.4);
+    }
+    
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, #c9a961 50%, transparent 100%);
+    }
+    
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+      opacity: 0;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .stagger-1 { animation-delay: 0.1s; }
+    .stagger-2 { animation-delay: 0.2s; }
+    .stagger-3 { animation-delay: 0.3s; }
+    .stagger-4 { animation-delay: 0.4s; }
+    .stagger-5 { animation-delay: 0.5s; }
+    .stagger-6 { animation-delay: 0.6s; }
+    .stagger-7 { animation-delay: 0.7s; }
+    .stagger-8 { animation-delay: 0.8s; }
+    .stagger-9 { animation-delay: 0.9s; }
+    
+    .profile-image {
+      width: 180px;
+      height: 180px;
+      border: 3px solid;
+      border-image: linear-gradient(135deg, #c9a961, #f4e4ba, #c9a961) 1;
+      position: relative;
+    }
+    
+    .profile-image::after {
+      content: '';
+      position: absolute;
+      inset: -10px;
+      border: 1px solid rgba(201, 169, 97, 0.3);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-lato">
+  <div id="app-wrapper" class="min-h-full w-full relative overflow-auto" style="background: linear-gradient(180deg, #000000 0%, #0d0d0d 50%, #000000 100%);"><!-- Background Decorative Elements -->
+   <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+    <div class="absolute top-20 left-10 w-64 h-64 rounded-full" style="background: radial-gradient(circle, rgba(201,169,97,0.1) 0%, transparent 70%);"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 rounded-full" style="background: radial-gradient(circle, rgba(201,169,97,0.1) 0%, transparent 70%);"></div>
+   </div><!-- Main Content -->
+   <main class="relative z-10 max-w-6xl mx-auto px-4 py-12 md:py-16"><!-- Header Section -->
+    <header class="text-center mb-16 fade-in-up"><!-- Profile Image Placeholder -->
+     <div class="profile-image rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden animate-float" style="background: linear-gradient(135deg, rgba(20,20,20,0.9) 0%, rgba(30,30,30,0.9) 100%);">
+      <svg class="w-24 h-24" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><defs>
+        <lineargradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+         <stop offset="0%" style="stop-color:#c9a961" />
+         <stop offset="50%" style="stop-color:#f4e4ba" />
+         <stop offset="100%" style="stop-color:#c9a961" />
+        </lineargradient>
+       </defs> <circle cx="50" cy="35" r="18" fill="url(#goldGradient)" /> <path d="M20 85 Q20 60 50 60 Q80 60 80 85" fill="url(#goldGradient)" />
+      </svg>
+     </div>
+     <h1 id="portfolio-name" class="font-cormorant text-5xl md:text-6xl lg:text-7xl font-bold gold-text mb-3">Amanda Simplício da Silva</h1>
+     <div class="divider w-32 mx-auto mb-4"></div>
+     <p id="portfolio-subtitle" class="text-xl md:text-2xl text-gray-400 font-light tracking-wide">Análise e Desenvolvimento de Sistemas</p>
+     <div class="flex flex-wrap items-center justify-center gap-4 mt-4 text-gray-400"><span class="flex items-center gap-2">
+       <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+       </svg> Brasil </span> <span class="flex items-center gap-2">
+       <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+       </svg> (83) 99650-3562 </span>
+     </div><!-- Social Links -->
+     <div class="flex items-center justify-center gap-6 mt-8"><a href="https://www.linkedin.com/in/amanda-simpl%C3%ADcio-da-silva-11b335272/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-yellow-500 transition-all hover:scale-110" title="LinkedIn">
+       <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+       </svg></a> <a href="https://wa.me/5583996503562" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-green-500 transition-all hover:scale-110" title="WhatsApp">
+       <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+       </svg></a> <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-500 transition-all hover:scale-110" title="Instagram">
+       <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+       </svg></a> <a href="https://github.com/Amandaad" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-500 transition-all hover:scale-110" title="GitHub">
+       <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+       </svg></a>
+     </div>
+    </header><!-- About Section -->
+    <section class="section-card rounded-2xl p-8 md:p-10 mb-10 fade-in-up stagger-2">
+     <h2 id="about-title" class="font-cormorant text-3xl md:text-4xl font-bold gold-text mb-6">Sobre Mim</h2>
+     <p id="about-text" class="text-gray-300 text-lg leading-relaxed mb-4">Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no 4º período, com experiência em atendimento ao cliente em Call Center. Tenho interesse na área de tecnologia, desenvolvimento de sistemas e estou em constante aprendizado para ingressar profissionalmente na área de TI.</p>
+     <div class="bg-gradient-to-r from-yellow-900/20 to-transparent border-l-4 border-yellow-600 p-4 rounded mt-6">
+      <h3 class="text-yellow-500 font-semibold mb-2 flex items-center gap-2">
+       <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18c-4.41 0-8-3.59-8-8V9.5l8-4.5 8 4.5V12c0 4.41-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+       </svg> Objetivo Profissional</h3>
+      <p class="text-gray-300">Atuar na área de Tecnologia da Informação, aplicando meus conhecimentos acadêmicos e minha experiência profissional para crescer e contribuir com soluções tecnológicas.</p>
+     </div>
+    </section><!-- Skills Section -->
+    <section class="section-card rounded-2xl p-8 md:p-10 mb-10 fade-in-up stagger-3">
+     <h2 id="skills-title" class="font-cormorant text-3xl md:text-4xl font-bold gold-text mb-6">Conhecimentos Técnicos</h2>
+     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Lógica de Programação</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">HTML &amp; CSS</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">JavaScript</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Banco de Dados</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Git &amp; GitHub</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Pacote Office</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Excel Avançado</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Digitação</span>
+      </div>
+     </div>
+     <div class="divider w-full mb-6"></div>
+     <h3 class="font-cormorant text-2xl md:text-3xl font-bold gold-text mb-4">Habilidades Interpessoais</h3>
+     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Comunicação</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Atendimento ao Cliente</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Organização</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Trabalho em Equipe</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Proatividade</span>
+      </div>
+      <div class="skill-badge rounded-lg px-4 py-3 text-center"><span class="text-gray-200 font-medium">Aprendizado Rápido</span>
+      </div>
+     </div>
+    </section><!-- Education Section -->
+    <section class="section-card rounded-2xl p-8 md:p-10 mb-10 fade-in-up stagger-4">
+     <h2 class="font-cormorant text-3xl md:text-4xl font-bold gold-text mb-8">Formação Acadêmica</h2>
+     <div class="border-l-2 border-yellow-600 pl-6 relative">
+      <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-yellow-600"></div>
+      <h3 class="text-xl font-semibold text-gray-200 mb-1">Análise e Desenvolvimento de Sistemas</h3>
+      <p class="text-gray-400 text-sm mb-2">IMES - Faculdade | 4º período - em andamento</p>
+      <p class="text-gray-300">Graduação tecnológica focada em desenvolvimento de software, banco de dados, análise de sistemas e tecnologias web.</p>
+     </div>
+    </section><!-- Certifications Section -->
+    <section class="section-card rounded-2xl p-8 md:p-10 mb-10 fade-in-up stagger-5">
+     <h2 class="font-cormorant text-3xl md:text-4xl font-bold gold-text mb-8">Cursos &amp; Certificações</h2>
+     <div class="space-y-6"><!-- Santander Courses -->
+      <div class="bg-gradient-to-r from-red-900/20 to-transparent border-l-4 border-red-600 p-5 rounded-lg">
+       <div class="flex items-start gap-3 mb-3">
+        <svg class="w-6 h-6 text-red-500 flex-shrink-0 mt-1" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
+        </svg>
+        <div>
+         <h3 class="text-xl font-bold text-red-400 mb-1">Santander - Cursos de Tecnologia</h3>
+         <p class="text-gray-400 text-sm mb-3">Programa de capacitação em tecnologia e ferramentas digitais</p>
+        </div>
+       </div>
+       <div class="grid md:grid-cols-2 gap-3 ml-9">
+        <div class="flex items-center gap-2 text-gray-300">
+         <svg class="w-4 h-4 text-red-500" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+         </svg> SQL - Banco de Dados
+        </div>
+        <div class="flex items-center gap-2 text-gray-300">
+         <svg class="w-4 h-4 text-red-500" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+         </svg> Excel Avançado
+        </div>
+        <div class="flex items-center gap-2 text-gray-300">
+         <svg class="w-4 h-4 text-red-500" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+         </svg> Word - Processamento de Texto
+        </div>
+        <div class="flex items-center gap-2 text-gray-300">
+         <svg class="w-4 h-4 text-red-500" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+         </svg> PowerPoint - Apresentações
+        </div>
+        <div class="flex items-center gap-2 text-gray-300">
+         <svg class="w-4 h-4 text-red-500" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+         </svg> Marketing Digital
+        </div>
+        <div class="flex items-center gap-2 text-gray-300">
+         <svg class="w-4 h-4 text-red-500" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+         </svg> HTML, CSS &amp; JavaScript
+        </div>
+       </div>
+      </div>
+     </div>
+    </section><!-- Projects Section -->
+    <section class="section-card rounded-2xl p-8 md:p-10 mb-10 fade-in-up stagger-6">
+     <h2 class="font-cormorant text-3xl md:text-4xl font-bold gold-text mb-8">Projetos</h2>
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- Project 1 -->
+      <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-yellow-600/30 rounded-xl p-6 hover:border-yellow-600/60 transition-all">
+       <div class="flex items-start gap-3 mb-4">
+        <svg class="w-8 h-8 text-yellow-600 flex-shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+        </svg>
+        <div>
+         <h3 class="text-xl font-bold text-yellow-500 mb-1">Studio de Beleza - Sistema de Agendamentos</h3>
+         <p class="text-gray-400 text-sm mb-3">HTML, CSS, JavaScript</p>
+        </div>
+       </div>
+       <p class="text-gray-300 mb-4">Sistema web completo para agendamento de serviços em studio de beleza, com interface intuitiva e responsiva.</p>
+       <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-yellow-900/30 text-yellow-500 rounded-full text-xs">HTML5</span> <span class="px-3 py-1 bg-yellow-900/30 text-yellow-500 rounded-full text-xs">CSS3</span> <span class="px-3 py-1 bg-yellow-900/30 text-yellow-500 rounded-full text-xs">JavaScript</span> <span class="px-3 py-1 bg-yellow-900/30 text-yellow-500 rounded-full text-xs">GitHub Pages</span>
+       </div>
+       <div class="mt-4 flex gap-3"><a href="https://github.com/Amandaad" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-yellow-500 transition-colors flex items-center gap-2">
+         <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+         </svg> Repositório </a> <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-yellow-500 transition-colors flex items-center gap-2">
+         <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+         </svg> Demo </a>
+       </div>
+      </div><!-- Project 2 -->
+      <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-yellow-600/30 rounded-xl p-6 hover:border-yellow-600/60 transition-all">
+       <div class="flex items-start gap-3 mb-4">
+        <svg class="w-8 h-8 text-green-600 flex-shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+        </svg>
+        <div>
+         <h3 class="text-xl font-bold text-green-500 mb-1">Criação de Planilhas Excel</h3>
+         <p class="text-gray-400 text-sm mb-3">Excel, Análise de Dados</p>
+        </div>
+       </div>
+       <p class="text-gray-300 mb-4">Desenvolvimento de planilhas avançadas para organização de dados, controle financeiro e análise de informações.</p>
+       <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-green-900/30 text-green-400 rounded-full text-xs">Excel</span> <span class="px-3 py-1 bg-green-900/30 text-green-400 rounded-full text-xs">Fórmulas</span> <span class="px-3 py-1 bg-green-900/30 text-green-400 rounded-full text-xs">Análise de Dados</span> <span class="px-3 py-1 bg-green-900/30 text-green-400 rounded-full text-xs">Digitação</span>
+       </div>
+      </div><!-- Project 3 -->
+      <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-yellow-600/30 rounded-xl p-6 hover:border-yellow-600/60 transition-all">
+       <div class="flex items-start gap-3 mb-4">
+        <svg class="w-8 h-8 text-pink-600 flex-shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
+        </svg>
+        <div>
+         <h3 class="text-xl font-bold text-pink-500 mb-1">Edição de Vídeos</h3>
+         <p class="text-gray-400 text-sm mb-3">TikTok, CapCut</p>
+        </div>
+       </div>
+       <p class="text-gray-300 mb-4">Criação e edição de conteúdo audiovisual para redes sociais, com foco em engajamento e storytelling visual.</p>
+       <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-pink-900/30 text-pink-400 rounded-full text-xs">TikTok</span> <span class="px-3 py-1 bg-pink-900/30 text-pink-400 rounded-full text-xs">CapCut</span> <span class="px-3 py-1 bg-pink-900/30 text-pink-400 rounded-full text-xs">Edição</span> <span class="px-3 py-1 bg-pink-900/30 text-pink-400 rounded-full text-xs">Social Media</span>
+       </div>
+      </div>
+     </div>
+    </section><!-- Experience Section -->
+    <section class="section-card rounded-2xl p-8 md:p-10 mb-10 fade-in-up stagger-7">
+     <h2 class="font-cormorant text-3xl md:text-4xl font-bold gold-text mb-8">Experiência Profissional</h2>
+     <div class="border-l-2 border-yellow-600 pl-6 relative">
+      <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-yellow-600"></div>
+      <h3 class="text-xl font-semibold text-gray-200 mb-1">Atendente de Call Center</h3>
+      <p class="text-gray-400 text-sm mb-3">AEC / Renata Kelly | 1 ano</p>
+      <ul class="space-y-2 text-gray-300">
+       <li class="flex items-start gap-2">
+        <svg class="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg> Atendimento ao cliente via telefone</li>
+       <li class="flex items-start gap-2">
+        <svg class="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg> Suporte e resolução de dúvidas</li>
+       <li class="flex items-start gap-2">
+        <svg class="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg> Registro de informações em sistema</li>
+       <li class="flex items-start gap-2">
+        <svg class="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg> Cumprimento de metas e indicadores</li>
+       <li class="flex items-start gap-2">
+        <svg class="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg> Comunicação clara e empática</li>
+      </ul>
+     </div>
+    </section><!-- Contact Section -->
+    <section class="section-card rounded-2xl p-8 md:p-10 fade-in-up stagger-8">
+     <h2 id="contact-title" class="font-cormorant text-3xl md:text-4xl font-bold gold-text mb-6 text-center">Vamos Conversar?</h2>
+     <p class="text-gray-300 text-center mb-8 max-w-2xl mx-auto">Estou aberta a oportunidades na área de TI e adoraria conversar sobre como posso contribuir com sua equipe!</p>
+     <div class="flex flex-wrap justify-center gap-4"><a href="https://wa.me/5583996503562" target="_blank" rel="noopener noreferrer" class="btn-gold px-6 py-3 rounded-full text-black font-semibold uppercase tracking-wider inline-flex items-center gap-3">
+       <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+       </svg> WhatsApp </a> <a href="https://www.linkedin.com/in/amanda-simpl%C3%ADcio-da-silva-11b335272/" target="_blank" rel="noopener noreferrer" class="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full text-white font-semibold uppercase tracking-wider inline-flex items-center gap-3 transition-all">
+       <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+       </svg> LinkedIn </a>
+     </div>
+    </section><!-- Footer -->
+    <footer class="text-center mt-16 fade-in-up stagger-9">
+     <div class="divider w-48 mx-auto mb-6"></div>
+     <p class="text-gray-500 text-sm">© 2024 Amanda Simplicio da Silva • Todos os direitos reservados</p>
+    </footer>
+   </main>
+  </div>
+  <script>
+    // Default configuration
+    const defaultConfig = {
+      name: 'Amanda Simplício da Silva',
+      subtitle: 'Análise e Desenvolvimento de Sistemas',
+      about_title: 'Sobre Mim',
+      about_text: 'Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no 4º período, com experiência em atendimento ao cliente em Call Center. Tenho interesse na área de tecnologia, desenvolvimento de sistemas e estou em constante aprendizado para ingressar profissionalmente na área de TI.',
+      skills_title: 'Conhecimentos Técnicos',
+      contact_title: 'Vamos Conversar?',
+      background_color: '#000000',
+      surface_color: '#141414',
+      text_color: '#d1d5db',
+      gold_color: '#c9a961',
+      font_family: 'Lato',
+      font_size: 16
+    };
+
+    // Element SDK config change handler
+    async function onConfigChange(config) {
+      const name = document.getElementById('portfolio-name');
+      const subtitle = document.getElementById('portfolio-subtitle');
+      const aboutTitle = document.getElementById('about-title');
+      const aboutText = document.getElementById('about-text');
+      const skillsTitle = document.getElementById('skills-title');
+      const contactTitle = document.getElementById('contact-title');
+      
+      if (name) {
+        name.textContent = config.name || defaultConfig.name;
+      }
+      if (subtitle) {
+        subtitle.textContent = config.subtitle || defaultConfig.subtitle;
+      }
+      if (aboutTitle) {
+        aboutTitle.textContent = config.about_title || defaultConfig.about_title;
+      }
+      if (aboutText) {
+        aboutText.textContent = config.about_text || defaultConfig.about_text;
+      }
+      if (skillsTitle) {
+        skillsTitle.textContent = config.skills_title || defaultConfig.skills_title;
+      }
+      if (contactTitle) {
+        contactTitle.textContent = config.contact_title || defaultConfig.contact_title;
+      }
+      
+      // Apply font
+      const fontFamily = config.font_family || defaultConfig.font_family;
+      document.body.style.fontFamily = `${fontFamily}, Lato, sans-serif`;
+      
+      // Apply font size
+      const baseSize = config.font_size || defaultConfig.font_size;
+      if (name) name.style.fontSize = `${baseSize * 3.5}px`;
+      if (subtitle) subtitle.style.fontSize = `${baseSize * 1.25}px`;
+      
+      // Apply colors
+      const bgColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      
+      const wrapper = document.getElementById('app-wrapper');
+      if (wrapper) {
+        wrapper.style.background = `linear-gradient(180deg, ${bgColor} 0%, ${surfaceColor} 50%, ${bgColor} 100%)`;
+      }
+      
+      if (subtitle) subtitle.style.color = textColor;
+    }
+
+    // Map to capabilities
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => { config.background_color = value; window.elementSdk.setConfig({ background_color: value }); }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => { config.surface_color = value; window.elementSdk.setConfig({ surface_color: value }); }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => { config.text_color = value; window.elementSdk.setConfig({ text_color: value }); }
+          },
+          {
+            get: () => config.gold_color || defaultConfig.gold_color,
+            set: (value) => { config.gold_color = value; window.elementSdk.setConfig({ gold_color: value }); }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => { config.font_family = value; window.elementSdk.setConfig({ font_family: value }); }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => { config.font_size = value; window.elementSdk.setConfig({ font_size: value }); }
+        }
+      };
+    }
+
+    // Map to edit panel values
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['name', config.name || defaultConfig.name],
+        ['subtitle', config.subtitle || defaultConfig.subtitle],
+        ['about_title', config.about_title || defaultConfig.about_title],
+        ['about_text', config.about_text || defaultConfig.about_text],
+        ['skills_title', config.skills_title || defaultConfig.skills_title],
+        ['contact_title', config.contact_title || defaultConfig.contact_title]
+      ]);
+    }
+
+    // Initialize
+    async function init() {
+      // Initialize Element SDK
+      if (window.elementSdk) {
+        window.elementSdk.init({
+          defaultConfig,
+          onConfigChange,
+          mapToCapabilities,
+          mapToEditPanelValues
+        });
+      }
+    }
+
+    init();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bd868ec404a27f3',t:'MTc2ODM0NDE3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
